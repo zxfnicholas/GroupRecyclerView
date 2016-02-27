@@ -6,7 +6,7 @@ GroupRecyclerView
 > 其实很简单啦，就是一个两层的列表而已
 
 ##效果图
-<img src="image/s01.jpg"/>
+<img src="image/s01.jpg  width="600px"/>
 
 ##数据源
 ```java
