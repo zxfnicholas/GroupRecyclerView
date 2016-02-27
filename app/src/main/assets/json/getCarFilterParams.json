@@ -1,0 +1,72 @@
+{
+  "code": 0,
+  "msg": "请求成功",
+  "data": [
+    {
+      "groupName": "车型",
+      "groupDesc": "无",
+      "groupData": [
+        {
+          "childName": "不限"
+        },
+        {
+          "childName": "微型车"
+        },
+        {
+          "childName": "小型车"
+        },
+        {
+          "childName": "紧凑车"
+        },
+        {
+          "childName": "中型车"
+        },
+        {
+          "childName": "跑车"
+        }
+      ]
+    },
+    {
+      "groupName": "车龄",
+      "groupDesc": "/单位：年",
+      "groupData": [
+        {
+          "childName": "不限"
+        },
+        {
+          "childName": "1年内"
+        },
+        {
+          "childName": "3年内"
+        },
+        {
+          "childName": "5年内"
+        },
+        {
+          "childName": "5年以上"
+        }
+      ]
+    },
+    {
+      "groupName": "里程",
+      "groupDesc": "/单位：万公里",
+      "groupData": [
+        {
+          "childName": "不限"
+        },
+        {
+          "childName": "1万公里内"
+        },
+        {
+          "childName": "3万公里内"
+        },
+        {
+          "childName": "5万公里内"
+        },
+        {
+          "childName": "5万公里以上"
+        }
+      ]
+    }
+  ]
+}
