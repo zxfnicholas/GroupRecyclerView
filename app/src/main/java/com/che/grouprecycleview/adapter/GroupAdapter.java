@@ -80,7 +80,6 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
         notifyDataSetChanged();
     }
 
-
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(mContext).inflate(viewType, parent, false), viewType);
@@ -123,11 +122,13 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
     }
 
     private void refreshChildStatus(Child child) {
-        boolean mStatus=!childsStatus.get(child);
-        childsStatus.put(child, mStatus);
+        if(childsStatus.get(child)){
+            return;
+        }
+        childsStatus.put(child, true);
         for(Child c:childsType.get(child).getGroupData()){
             if(c!=child){
-                childsStatus.put(c, !mStatus);
+                childsStatus.put(c, false);
             }
         }
         refreshData();
